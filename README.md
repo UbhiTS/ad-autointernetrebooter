@@ -49,12 +49,12 @@ internet_health_monitor:
   schedule:
     - "04:00:00"
     - "16:00:00"
-  # OPTIONAL SPEECH NOTIFICATIONS
+  # vvv OPTIONAL SPEECH NOTIFICATIONS vvv
   notify:
     alexa: media_player.upper_big_bedroom_alexa
     start_time: "08:00:00"
     end_time: "21:30:00"
-  # OPTIONAL SPEECH NOTIFICATIONS
+  # ^^^ OPTIONAL SPEECH NOTIFICATIONS ^^^
 ```
 
 key | optional | type | description
