@@ -16,7 +16,7 @@ Also, if you want to see a walkthrough of my Home Assistant configuration, I hav
 - [Home Automation on 'STEROIDS' : Video Walkthrough](https://youtu.be/qqktLE9_45A)
 
 ## Prerequisites
-**You need the SpeedTest.net component configured in your configuration.yaml**. The app works on the sensors from this component
+**You need the SpeedTest.net component configured in your configuration.yaml**.
 ### configuration.yaml
 ```yaml
 speedtestdotnet:
