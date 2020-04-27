@@ -11,12 +11,13 @@ Please ⭐ this repo if you like my work and also check out my other repos like
 - [Alexa (& Sonos) Doorbell](https://github.com/UbhiTS/ad-alexadoorbell)
 - [Alexa (& Sonos) Door/Window Announce](https://github.com/UbhiTS/ad-alexadoorwindowannounce)
 - [Alexa (& Sonos) Smart Talking Thermostat](https://github.com/UbhiTS/ad-alexasmarttalkingthermostat)
+- [Auto 'Crappy Internet' Rebooter](https://github.com/UbhiTS/ad-autointernetrebooter)
 
 Also, if you want to see a walkthrough of my Home Assistant configuration, I have my video walkthrough on youtube below
 - [Home Automation on 'STEROIDS' : Video Walkthrough](https://youtu.be/qqktLE9_45A)
 
 ## Prerequisites
-**You need the SpeedTest.net component configured in your configuration.yaml**.
+You need the **SpeedTest.net** component configured in your configuration.yaml
 ### configuration.yaml
 ```yaml
 speedtestdotnet:
@@ -30,7 +31,7 @@ speedtestdotnet:
 **if you enable speech notifications, you will also need the [Alexa Media Player, or Sonos Integration with HA](https://github.com/custom-components/alexa_media_player)**
 
 ## Installation
-Use [HACS](https://github.com/custom-components/hacs) or [download](https://github.com/UbhiTS/ad-autointernetrebooter) the `auto_internet_rebooter.py` from inside the `apps` directory to your local `apps` directory, and add the following configuration to enable the `auto_internet_rebooter` module.
+Use [HACS](https://github.com/custom-components/hacs) or [download](https://github.com/UbhiTS/ad-autointernetrebooter) the `auto_internet_rebooter.py` from inside the `apps` directory to your local `apps` directory, and add the following configuration to enable the app.
 
 ## Configuration (with Optional Speech Notifications)
 ```yaml
@@ -74,7 +75,7 @@ key | optional | type | description
 `notify\|end_time` | True | time | Every start has an end. This one too :smirk:
     
     
-## Thank you!
+## Thank you!:raised_hands:
 This app wouldn't be possible without the amazing work done by the developers and community at **[Home Assistant](https://www.home-assistant.io/)**. 
 
 If you like my work and feel gracious, you can buy me a beer below ;)
