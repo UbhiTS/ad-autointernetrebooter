@@ -75,7 +75,7 @@ key | optional | type | description
 `notify\|end_time` | True | time | Every start has an end. This one too :smirk:
     
     
-## Thank you!:raised_hands:
+## Thank you! :raised_hands:
 This app wouldn't be possible without the amazing work done by the developers and community at **[Home Assistant](https://www.home-assistant.io/)**. 
 
 If you like my work and feel gracious, you can buy me a beer below ;)
