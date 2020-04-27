@@ -1,4 +1,4 @@
-# Auto 'Crappy Internet' Rebooter :rocket:
+# Auto 'Crappy Internet:poop:' Rebooter :rocket:
 
 Automatically reboot your internet :globe_with_meridians: if you use a **[ZWave](https://www.amazon.com/Aeotec-Wireless-Control-Security-Automation/dp/B07PJNL5DB/ref=sr_1_7?dchild=1&keywords=zwave+socket&qid=1587936800&sr=8-7), [Zigbee](https://www.amazon.com/Compatible-SmartThings-switches-Appliances-accessories/dp/B07SSWD5MH/ref=sr_1_3?dchild=1&keywords=zigbee+socket&qid=1587936858&sr=8-3), or Bluetooth switch/socket** for your internet modem.
 **This app :small_red_triangle:WILL NOT WORK:small_red_triangle: with WiFi switches/sockets**
