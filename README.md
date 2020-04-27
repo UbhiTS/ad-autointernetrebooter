@@ -1,7 +1,7 @@
 # Auto 'Crappy Internet' Rebooter :rocket:
 
-Automatically reboot your internet if you use a **[ZWave](https://www.amazon.com/Aeotec-Wireless-Control-Security-Automation/dp/B07PJNL5DB/ref=sr_1_7?dchild=1&keywords=zwave+socket&qid=1587936800&sr=8-7), [Zigbee](https://www.amazon.com/Compatible-SmartThings-switches-Appliances-accessories/dp/B07SSWD5MH/ref=sr_1_3?dchild=1&keywords=zigbee+socket&qid=1587936858&sr=8-3), or Bluetooth switch/socket** for your internet modem.
-**This app WILL NOT WORK with WiFi switches/sockets**
+Automatically reboot your internet :globe_with_meridians: if you use a **[ZWave](https://www.amazon.com/Aeotec-Wireless-Control-Security-Automation/dp/B07PJNL5DB/ref=sr_1_7?dchild=1&keywords=zwave+socket&qid=1587936800&sr=8-7), [Zigbee](https://www.amazon.com/Compatible-SmartThings-switches-Appliances-accessories/dp/B07SSWD5MH/ref=sr_1_3?dchild=1&keywords=zigbee+socket&qid=1587936858&sr=8-3), or Bluetooth switch/socket** for your internet modem.
+**This app :small_red_triangle:WILL NOT WORK:small_red_triangle: with WiFi switches/sockets**
 
 Ever since we've set this up in our home, we've never had to worry about the internet. Infact, I've even forgotten where our modem is :wink: ... Awesome! 
 
