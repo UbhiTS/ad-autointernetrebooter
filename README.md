@@ -1,4 +1,4 @@
-# Auto 'Crappy Internet' Rebooter :rocket:
+# Auto 'Crappy Internet' Rebooter :rocket: <img src="https://poa5qzspd7.execute-api.us-east-1.amazonaws.com/live/hypercounterimage/f7e1b92607a64f5fb2de4cf4ada55099/counter.png" />
 
 Automatically reboot your internet :globe_with_meridians: if you use a **[ZWave](https://www.amazon.com/Aeotec-Wireless-Control-Security-Automation/dp/B07PJNL5DB/ref=sr_1_7?dchild=1&keywords=zwave+socket&qid=1587936800&sr=8-7), [Zigbee](https://www.amazon.com/Compatible-SmartThings-switches-Appliances-accessories/dp/B07SSWD5MH/ref=sr_1_3?dchild=1&keywords=zigbee+socket&qid=1587936858&sr=8-3), or Bluetooth switch/socket** for your internet modem.
 **This app :small_red_triangle:WILL NOT WORK:small_red_triangle: with WiFi switches/sockets**
@@ -75,7 +75,7 @@ key | optional | type | description
 `notify\|end_time` | True | time | Every start has an end. This one too :smirk:
     
     
-## Thank you! :raised_hands: <img src="https://poa5qzspd7.execute-api.us-east-1.amazonaws.com/live/hypercounterimage/f7e1b92607a64f5fb2de4cf4ada55099/counter.png" />
+## Thank you! :raised_hands:
 This app wouldn't be possible without the amazing work done by the developers and community at **[Home Assistant](https://www.home-assistant.io/)**. 
 
 If you like my work and feel gracious, you can buy me a beer below ;)
