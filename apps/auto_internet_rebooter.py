@@ -56,7 +56,7 @@ class AutoInternetRebooter(hass.Hass):
     # highly unlikely that 2 tests will result in same ping speed
     self.listen_state(self.evaluate_internet_health, self.sensor_ping, attribute = "state")
     
-    self.log(f"INITIALIZED D/L {self.threshold_download}, U/L {self.threshold_upload}, PING {self.threshold_ping}")
+    self.log(f"\nINIT - AUTO 'CRAPPY INTERNET' REBOOTER\n  D/L  {self.threshold_download}\n  U/L   {self.threshold_upload}\n  PING {self.threshold_ping}")
 
 
   def run_speedtest(self, kwargs):
@@ -87,9 +87,8 @@ class AutoInternetRebooter(hass.Hass):
       self.log("INTERNET HEALTH ERROR: " + ", ".join(log))
       self.log("INTERNET POWER CYCLE IN 30 SECS")
       
-      if self.notify:
-        if self.notify_start_time <= datetime.now().time() and datetime.now().time() <= self.notify_end_time:
-          self.call_service("notify/alexa_media", data = {"type":"tts", "method":"all"}, target = self.alexa, message = "Your attention please, internet power cycle in 30 seconds!")
+      if self.notify and self.is_time_okay(self.notify_start_time, self.notify_end_time):
+        self.call_service("notify/alexa_media", data = {"type":"tts", "method":"all"}, target = self.alexa, message = "Your attention please, internet power cycle in 30 seconds!")
       
       self.run_in(self.turn_off_switch, 30)
       self.run_in(self.turn_on_switch, 45)
@@ -105,3 +104,11 @@ class AutoInternetRebooter(hass.Hass):
   def turn_on_switch(self, kwargs):
     self.log("INTERNET RESET : TURN ON")
     self.call_service("switch/turn_on", entity_id = self.switch)
+
+
+  def is_time_okay(self, start, end):
+    current_time = datetime.now().time()
+    if (start < end):
+      return start <= current_time and current_time <= end
+    else:
+      return start <= current_time or current_time <= end
