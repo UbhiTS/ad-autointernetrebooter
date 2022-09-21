@@ -63,23 +63,26 @@ class AutoInternetRebooter(hass.Hass):
     self.debug_log(f"\n**** INIT - AUTO 'CRAPPY INTERNET' REBOOTER ****\n  D/L  {self.threshold_download}\n  U/L   {self.threshold_upload}\n  PING {self.threshold_ping}")
 
     self.debug = bool(self.args["debug"]) if "debug" in self.args else self.debug
-    
 
-  def run_speedtest(self, kwargs):
+
+  async def run_speedtest(self, kwargs):
     self.debug_log("INTERNET SPEED TEST IN PROGRESS")
-    try:
-      # in try catch as this seems to be a synchronous call. AppDaemon timesout!
-      self.call_service("speedtestdotnet/speedtest")
-    except:
-      pass
+    self.call_service("homeassistant/update_entity", entity_id = "sensor.speedtest_ping")
 
 
   def evaluate_internet_health(self, entity, attribute, old, new, kwargs):
     
-    speed_download = float(self.get_state(self.sensor_download))
-    speed_upload = float(self.get_state(self.sensor_upload))
-    speed_ping = float(self.get_state(self.sensor_ping))
-    
+    speed_download = self.threshold_download
+    speed_upload = self.threshold_upload
+    speed_ping = self.threshold_ping
+
+    try:
+      speed_download = float(self.get_state(self.sensor_download))
+      speed_upload = float(self.get_state(self.sensor_upload))
+      speed_ping = float(self.get_state(self.sensor_ping))
+    except:
+      pass
+
     d = speed_download < self.threshold_download
     u = speed_upload < self.threshold_upload
     p = speed_ping > self.threshold_ping
@@ -95,7 +98,8 @@ class AutoInternetRebooter(hass.Hass):
       
       if self.notify and self.is_time_okay(self.notify_start_time, self.notify_end_time):
         self.call_service("notify/alexa_media", data = {"type":"tts", "method":"all"}, target = self.alexa, message = "Your attention please, internet power cycle in 30 seconds!")
-      
+        pass
+
       self.run_in(self.turn_off_switch, 30)
       self.run_in(self.turn_on_switch, 45)
     else:
