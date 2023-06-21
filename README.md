@@ -19,7 +19,9 @@ Also, if you want to see a walkthrough of my Home Assistant configuration, I hav
 - [Home Automation on 'STEROIDS' : Video Walkthrough](https://youtu.be/qqktLE9_45A)
 
 ## Prerequisites
-You need the :boom:**SpeedTest.net**:boom: component configured in your configuration.yaml
+You need the :boom:**SpeedTest.net**:boom: component configured in your configuration.yaml and ensure you "disable polling" using "system options".
+![image](https://github.com/UbhiTS/ad-autointernetrebooter/assets/3799525/e01fdcf5-c705-4bc5-b99f-bf7897771750)
+
 ### configuration.yaml
 ```yaml
 speedtestdotnet:
